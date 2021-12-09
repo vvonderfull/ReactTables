@@ -7,13 +7,22 @@ const LayoutNavbar = () => {
     <header className="navbar">
       <ul>
         <li>
-          <Link to="students">Студенты</Link>
+          <Link to="students">
+            <b>Студенты</b>
+          </Link>
         </li>
         <li>
-          <Link to="ratings">Рэйтинг</Link>
+          <Link to="ratings">
+            <b>Рэйтинг</b>
+          </Link>
         </li>
         <li>
-          <Link to="subjects">Предметы</Link>
+          <Link to="subjects">
+            <b>Предметы</b>
+          </Link>
+        </li>
+        <li>
+          <Link to="/login">Выйти</Link>
         </li>
       </ul>
     </header>

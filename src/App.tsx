@@ -25,6 +25,7 @@ const App = () => {
           <Route path="students" element={<StudentsView />} />
           <Route path="ratings" element={<RatingsView />} />
           <Route path="subjects" element={<SubjectsView />} />
+          <Route path="/" element={<Navigate to="students" />} />
         </Route>
       </Routes>
     </Provider>

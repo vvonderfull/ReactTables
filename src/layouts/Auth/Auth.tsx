@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Auth.scss";
 import axios from "axios";
 import { useActions } from "../../hooks/useActions";
@@ -7,6 +7,10 @@ import { useNavigate } from "react-router-dom";
 const Auth = () => {
   const { setToken } = useActions();
   let navigate = useNavigate();
+
+  useEffect(() => {
+    localStorage.removeItem("token");
+  }, []);
 
   const loginHandler = (event: React.SyntheticEvent) => {
     event.preventDefault();
