@@ -3,12 +3,12 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: rgba(245, 171, 247, 0.8);
+  background: linear-gradient(#7184ae, #aac8cb, #e4e8e8);
   border-radius: 5px;
   overflow: auto;
 
   .head {
-    background: #a88cc2;
+    background: rgba(255, 255, 255, 0.5);
     height: 30px;
     padding: 0 20px;
     &__row {

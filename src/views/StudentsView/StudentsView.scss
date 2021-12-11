@@ -13,8 +13,19 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
   &__add-student {
-    border: 0;
-    outline: 0;
+    display: flex;
+    width: fit-content;
+    background: white;
+    border: 2px solid #a88cc2;
+    border-radius: 5px;
     margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+    outline: 0;
+    transition: 0.3s;
+    &:hover {
+      background: #a88cc2;
+      color: white;
+    }
   }
 }

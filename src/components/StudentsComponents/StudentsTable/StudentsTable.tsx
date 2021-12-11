@@ -1,5 +1,5 @@
 import "./StudentsTable.scss";
-import Table from "../MainTable/Table";
+import Table from "../../TablesType/MainTable/Table";
 
 type TableProps = {
   id: string | number;

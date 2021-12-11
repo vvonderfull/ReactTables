@@ -1,6 +1,7 @@
 import React from "react";
 import "./StudentsView.scss";
-import StudentsTable from "../../components/TablesType/StudentsTable/StudentsTable";
+import StudentsTable from "../../components/StudentsComponents/StudentsTable/StudentsTable";
+import CreateEditStudentsModal from "../../components/StudentsComponents/Modals/CreateEditStudentsModal";
 const testFields = ["id", "name"] as const;
 const testData = [
   { id: "1", name: "test1" },
@@ -16,6 +17,7 @@ const StudentsView = () => {
         </button>
         {<StudentsTable tableFields={testFields} tableData={testData} />}
       </div>
+      <CreateEditStudentsModal />
     </section>
   );
 };
