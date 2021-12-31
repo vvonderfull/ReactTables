@@ -24,7 +24,7 @@
       margin-bottom: 20px;
     }
   }
-  &__name {
+  &__mark {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -38,56 +38,45 @@
       border: none;
     }
   }
-  &__surname {
+  &__description {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
-    input {
-      height: 30px;
+    textarea {
+      height: 70px;
       background: #c8cbbb;
       border-radius: 10px;
-      padding: 0 10px;
+      padding: 5px 10px;
+      outline: none;
+      border: none;
+      resize: none;
+    }
+  }
+  &__student {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    select {
+      height: 20px;
+      background: #c8cbbb;
+      border-radius: 4px;
       outline: none;
       border: none;
     }
   }
-  &__birthday {
+  &__subject {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
-    input {
-      width: 100%;
-      height: 30px;
+    select {
+      height: 20px;
       background: #c8cbbb;
-      border-radius: 10px;
-      padding: 0 10px;
+      border-radius: 4px;
       outline: none;
       border: none;
-    }
-  }
-  &__phone {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 10px;
-    .flag-dropdown {
-      background: #c8cbbb !important;
-      .selected-flag {
-        &:hover {
-          background: #c8cbbb !important;
-        }
-        &:focus {
-          background: #c8cbbb !important;
-        }
-      }
-    }
-    input {
-      width: 100% !important;
-      height: 30px;
-      background: #c8cbbb !important;
-      border-radius: 10px;
     }
   }
   &__create {

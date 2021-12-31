@@ -1,0 +1,31 @@
+.students-page {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: snow;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  &__add-student {
+    display: flex;
+    width: fit-content;
+    background: white;
+    border: 2px solid #a88cc2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+    outline: 0;
+    transition: 0.3s;
+    &:hover {
+      background: #a88cc2;
+      color: white;
+    }
+  }
+}

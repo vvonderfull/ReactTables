@@ -1,11 +1,11 @@
 import "./StudentsTable.scss";
 import Table from "../../TablesType/MainTable/Table";
 
-type TableProps = {
-  id: string | number;
-  name: string;
+class StudentsTable extends Table<Student> {}
+export type Student = {
+  name: string | number;
+  surname: string;
+  birthday: string;
+  phone: string;
 };
-
-class StudentsTable extends Table<TableProps> {}
-
 export default StudentsTable;

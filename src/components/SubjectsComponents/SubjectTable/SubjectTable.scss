@@ -1,0 +1,44 @@
+.table-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 171, 247, 0.8);
+  border-radius: 5px;
+  overflow: auto;
+
+  .head {
+    background: #a88cc2;
+    height: 30px;
+    padding: 0 20px;
+    &__row {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    &__cell {
+      display: flex;
+      width: 100%;
+      word-break: break-all;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    .body {
+      &__row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        margin: 5px 0;
+      }
+      &__cell {
+        display: flex;
+        width: 100%;
+        word-break: break-all;
+        padding-right: 5px;
+      }
+    }
+  }
+}
