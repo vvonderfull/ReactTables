@@ -16,6 +16,7 @@ const StudentsView = () => {
   const [showModal, setShowModal] = useState(false);
 
   const changeShowModal = (val: boolean): void => {
+    changeStudents();
     setShowModal(val);
   };
   const changeStudents = (): void => {

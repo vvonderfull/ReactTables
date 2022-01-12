@@ -27,7 +27,7 @@ const CreateEditStudentsModal = (props: any) => {
       },
     })
       .then((resp) => {
-        console.log(resp);
+        props.hideModal();
       })
       .catch((err) => {
         console.log(err);
